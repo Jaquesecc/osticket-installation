@@ -24,8 +24,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Web Server: Microsoft IIS
 - PHP: Version 7.2 or later with extensions
-- Web Broser: Latest version of Chrome or Safari
-- Opeating System: Windows or Mac
+- Web Browser: Latest version of Chrome or Safari
+- Operating System: Windows or Mac
   
 
 <h2>Installation Steps</h2>
