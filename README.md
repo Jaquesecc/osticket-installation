@@ -30,7 +30,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
 
 <h2>Installation Steps</h2>
-
 <p>
 <img 
 </p>
