@@ -23,6 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Web Server: Microsoft IIS
+- Database: MySQL
 - PHP: Version 7.2 or later with extensions
 - Web Browser: Latest version of Chrome or Safari
 - Operating System: Windows or Mac
