@@ -24,30 +24,46 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Web Browser: Latest version of Chrome or Safari
 - Operating System: Windows or Mac
 
+
+<h2>Create A Virtual Machine</h2>
+
+In Azure, go to Virtual Machines and create a new Resource Group, choose a name of your liking. For the purpose of this demonstration, the Resource Group is named osTicket. Next, create a Virtual Machine name (osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next: Disks.
+  
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
-In Azure, I went to Virtual Machines and created a new Resource Group and named the Virtual Machine osticket-vm. I set the correct region, and set the image to Windows 10 Pro, and created administrator account credentials
-  
+
+Next, select Next: Networking. Create a new Virtual Network. Keep default settings for Ports, check the Licensing Agreement box at the bottom (don't skip this!), then select Review and Create, then click Create.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+
+
+Once the VM deployment is complete, log into the VM (osticket-vm) with Remote Desktop.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+
+
 
 <h2>Installation Steps</h2>
-<p>
+Within the VM (osticket-vm), download the osTicket-Installation-Files.zip (provided by CourseCareers), and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”.
+We will use the files in this folder to install osTicket and some of the dependencies.
 
-In Azure, I went to Virtual Machines and created a new Resource Group and named the Virtual Machine osticket-vm. I set the correct region, and set the image to Windows 10 Pro, and created administrator account credentials.
-</p>
-<br />
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
-<p>
 
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+ Once osTicket-Installation-Files.zip is downloaded, drag the folder onto the desktop.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1) 
+
+
+ Right-click the folder, then select Extract All. (Make sure it's going into the Desktop in osTicket). Select Extract.
+
+  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+
+
+
+
+
+
+
