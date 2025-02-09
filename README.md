@@ -19,7 +19,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Web Server: Microsoft IIS
-- Database: MySQL
+- Database: MySQL 5.5.62
 - PHP: PHPManagerForIIS_V1.5.0.msi
 - Web Browser: Latest version of Chrome or Safari
 - Operating System: Windows or Mac
@@ -133,13 +133,33 @@ Instead of selecting Extract right away, select Browse. Click on Windows C:, sel
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
+Next, install the VC Redistributable File. From the “osTicket-Installation-Files” folder, scroll down to VC_redist.x86.exe., double-click, and install.
 
- 
-
-
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Next, I will install MySQL 5.5.62. MySQL serves as the database management system where osTicket stores all its data. osTicket uses MySQL to store ticket information, user details, settings, and other data required for its operation. From the “osTicket-Installation-Files” folder, douoble-click on MySQL, agree to the terms and conditions by checking the box, selelct Next, Typical, and Install. Check the box to launch the MySQL Configuration Wizard. Then select Finish.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+For the MySQL Configuration Wizard, select Next, then click on Standard Configuration. Select "Next" twice. For Security options, check the box to Modify Security Settings. It is very important to make sure that the username and password are the same word with no errors. For the purpose of this demo, I will be using the word "root". Select Next, Execute, and Finish.
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+
+Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, I will open IIS as an Administrator. Click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Next, I will register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe). This basically means I'm making the web server aware of the existence of PHP, and telling the computer where it is located. 
+Double-click PHP Manager, then select Register new PHP version. Click the 3 dots to the right to browse to the C: drive, select the PHP folder, then double-click the php-cgi folder. Select Ok.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Next, reload IIS (open IIS, stop and start the server).
 
 
 
