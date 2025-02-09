@@ -103,6 +103,8 @@ On the left, select Turn Windows Feature On or Off. Scroll down, and check the b
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Next, I will install PHP Manager for IIS.
+
 
 
 
