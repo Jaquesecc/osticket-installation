@@ -32,14 +32,26 @@ In Azure, go to Virtual Machines and create a new Resource Group, choose a name 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Next, select Next: Networking. Create a new Virtual Network. Keep default settings for Ports, check the Licensing Agreement box at the bottom (don't skip this!), then select Review and Create, then click Create.
+Select Next: Networking. Create a new Virtual Network. Keep default settings for Ports, check the Licensing Agreement box at the bottom (don't skip this!), then select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Once the VM deployment is complete, log into the VM (osticket-vm) with Remote Desktop.
+Once the Virtual Machine deployment is complete, search Virtual Machine, and copy the Public IP Address for osticket-vm.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+
+
+Open Remote Desktop, Add PC, and then paste the Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket. Select Add
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+
+
+Log in with the same credentials you used when you created your Virtual Machine
+
+
 
 
 
