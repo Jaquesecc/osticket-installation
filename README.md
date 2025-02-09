@@ -55,14 +55,23 @@ Enter your User Account credentials, then Continue. Now you are logged in to the
 
 
 
-The remaining information may seem ambiguous, but essentially, we are installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. 
-
+The remaining information may seem ambiguous, but essentially, we are installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtula Machine.
 
 <h2>Installation Steps</h2>
-Within the VM (osticket-vm), download the osTicket-Installation-Files.zip (provided by CourseCareers), and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”.
-We will use the files in this folder to install osTicket and some of the dependencies.
+Open Microsoft Edge. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+
+
+Copy the osTicket-Installation-Files.zip URL (the file was obtained from the CourseCareers Resource Section Lab 3: osTicket Installation), and paste it inside the Virtual Machine browser. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
+We will use the files in this folder to install osTicket and some of the dependencies.
+
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
  Once osTicket-Installation-Files.zip is downloaded, drag the folder onto the desktop.
