@@ -27,7 +27,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Create A Virtual Machine</h2>
 
-In Azure, go to Virtual Machines and create a new Resource Group, choose a name of your liking. For the purpose of this demonstration, the Resource Group is named osTicket. Next, create a Virtual Machine name (osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next: Disks.
+In Azure, go to Virtual Machines and create a new Resource Group, choose a name of your liking. For the purpose of this demonstration, the Resource Group will be named osTicket. Next, create a Virtual Machine name (osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next: Disks.
   
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
@@ -49,13 +49,13 @@ Open Remote Desktop, Add PC, and then paste the Public IP Address into the PC Na
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Enter your User Account credentials, then Continue. Now you are logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
+Enter your User Account credentials (same credentials from when the Virtual Machine was created in Azure), then Continue. Now you are logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
 
-The remaining information may seem ambiguous, but essentially, we are installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtula Machine.
+The remaining information may seem ambiguous, but essentially, I am installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtula Machine.
 
 <h2>Installation Steps</h2>
 Within the Virtual Machine, open Microsoft Edge. 
@@ -63,25 +63,34 @@ Within the Virtual Machine, open Microsoft Edge.
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Copy the osTicket-Installation-Files.zip URL, and paste it inside the Virtual Machine browser. The URL was obtained from the CourseCareers Resource Section Lab 3: osTicket Installation.
-
+This Lab Checklist URL was obtained from the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. Copy the Lab Checklist URL, and paste it inside the Virtual Machine browser. 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
+Now that the Lab Checklist is open inside the Virtual Machine, click the link and download osTicket-Installation-Files.zip 
 We will use the files in this folder to install osTicket and some of the dependencies.
 
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
- Once osTicket-Installation-Files.zip is downloaded, drag the folder onto the desktop.
+ Once osTicket-Installation-Files.zip is downloaded, open the folder and drag onto the desktop.
 
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1) 
 
 
- Right-click the folder, then select Extract All. Select Extract.
+ Right-click the folder, then select Extract All. Select Extract. Make sure it's going onto the desktop in osTicket. If done correctly, it will look like this.
 
   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Next, we will enable IIS within Windows, with CGI installed as well. IIS is the webserver that allows you to host and manage websites, web applications, and services on a Windows server. CGI (Common Gateway Interface) is a standard protocol used to enable web servers to interact with external programs allowing them to generate dynamic content. It acts as a bridge between the web server and applications running on the server.
+
+
+
+
+
+
+
 
   
 
