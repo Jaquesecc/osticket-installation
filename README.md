@@ -79,9 +79,11 @@ We will use the files in this folder to install osTicket and some of the depende
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1) 
 
 
- Right-click the folder, then select Extract All. (Make sure it's going into the Desktop in osTicket). Select Extract.
+ Right-click the folder, then select Extract All. Select Extract.
 
   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+  
 
 
 
