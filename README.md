@@ -42,17 +42,20 @@ Once the Virtual Machine deployment is complete, search Virtual Machine, and cop
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Open Remote Desktop, Add PC, and then paste the Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket. Select Add
+Open Remote Desktop, Add PC, and then paste the Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket. Select Add. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Log in with the same credentials you used when you created your Virtual Machine
+Enter your User Account credentials, then Continue. Now you are logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
 
+The remaining information may seem ambiguous, but essentially, we are installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. 
 
 
 <h2>Installation Steps</h2>
