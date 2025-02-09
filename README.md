@@ -42,7 +42,7 @@ Once the Virtual Machine deployment is complete, search Virtual Machine, and cop
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Open Remote Desktop, Add PC, and then paste the Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket. Select Add. 
+The next step is to open Remote Desktop, and login to the osticket-vm. Next add PC, and then paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket. Select Add. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
@@ -55,7 +55,7 @@ Enter your User Account credentials (same credentials from when the Virtual Mach
 
 
 
-The remaining information may seem ambiguous, but essentially, I am installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtula Machine.
+The remaining information may seem ambiguous, but essentially, I will be installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtula Machine.
 
 <h2>Installation Steps</h2>
 Within the Virtual Machine, open Microsoft Edge. 
@@ -63,7 +63,7 @@ Within the Virtual Machine, open Microsoft Edge.
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-This Lab Checklist URL was obtained from the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. Copy the Lab Checklist URL, and paste it inside the Virtual Machine browser. 
+The document that I will be usuing is the Lab Checklist URL obtained from the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
@@ -78,7 +78,7 @@ We will use the files in this folder to install osTicket and some of the depende
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1) 
 
 
- Right-click the folder, then select Extract All. Select Extract. Make sure it's going onto the desktop in osTicket. If done correctly, it will look like this.
+ Right-click the folder, then select Extract All. Then select Extract. Make sure it's going onto the desktop in osTicket. If done correctly, it will look like this.
 
   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
@@ -86,14 +86,21 @@ We will use the files in this folder to install osTicket and some of the depende
 Next, we will enable IIS within Windows, with CGI installed as well. IIS is the webserver that allows you to host and manage websites, web applications, and services on a Windows server. CGI (Common Gateway Interface) is a standard protocol used to enable web servers to interact with external programs allowing them to generate dynamic content. It acts as a bridge between the web server and applications running on the server.
 
 
-To enable IIS, click the Start Menu, and go to the Control Panel by typing "control". Open the Control Panel, and click on 
+To enable IIS, click the Start Menu, and go to the Control Panel by typing "control". Open the Control Panel, and click on Programs (Uninstall a program). I'm not going to actually unistall anything, but this opens the window I need to use.
+
+  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+On the left, select Turn Windows Feature On or Off. Scroll down, and check the box that says Internt Information Services. Expand by clicking the plus sign.
+
+   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+  Continue on to install CGI. Underneath Internet Information Services, select the plus sign to expand World Wide Web Services. Expand Application Development Features, then check the box next to CGI. Select Ok.
 
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
-  
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 
