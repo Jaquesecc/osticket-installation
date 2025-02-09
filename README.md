@@ -86,6 +86,7 @@ We will use the files in this folder to install osTicket and some of the depende
 Next, we will enable IIS within Windows, with CGI installed as well. IIS is the webserver that allows you to host and manage websites, web applications, and services on a Windows server. CGI (Common Gateway Interface) is a standard protocol used to enable web servers to interact with external programs allowing them to generate dynamic content. It acts as a bridge between the web server and applications running on the server.
 
 
+To enable IIS, click the Start Menu, and go to the Control Panel by typing "control". Open the Control Panel, and click on 
 
 
 
