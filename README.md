@@ -20,7 +20,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Web Server: Microsoft IIS
 - Database: MySQL
-- PHP: Version 7.2 or later with extensions
+- PHP: PHPManagerForIIS_V1.5.0.msi
 - Web Browser: Latest version of Chrome or Safari
 - Operating System: Windows or Mac
 
@@ -103,7 +103,40 @@ On the left, select Turn Windows Feature On or Off. Scroll down, and check the b
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, I will install PHP Manager for IIS.
+Next I will continue installing the remaining files. Next, I will be installing PHP Manager for IIS. PHP Manager for IIS is a management tool that helps configure and manage PHP installations on Microsoft IIS.  It simplifies the process of setting up, configuring, and optimizing PHP on IIS servers.
+
+
+From the “osTicket-Installation-Files” folder, and select PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Continue the prompts to install by selecting Next, I Agree, and Install.
+
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+From the “osTicket-Installation-Files” folder, install the Rewrite Module. This is a feature that allows you to modify URLs dynamically. It helps create user-friendly and SEO-friendly URLs by rewriting incoming requests before they reach your web application. From the “osTicket-Installation-Files” folder, select rewrite_amd64_en-US.msi. Check the box to agree, and install.
+
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Next, I will create a directory on Local Disk C: (C:\PHP). The C: drive is the primary partition on a Windows computer where the operating system (Windows), system files, and installed programs are typically stored.
+In the same File, scroll down to the C: drive. Right-click to create a New folder, and name it PHP.
+
+ ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+ Next, I will unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder. From the “osTicket-Installation-Files” folder, Right-click php-7.3.8-nts-Win32-VC15-x86.zip, then select Extract All.
+
+  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+
+Instead of selecting Extract right away, select Browse. Click on Windows C:, select PHP, then Select Folder. Now select Extract. The PHP folder is now extracted along with the files. If done correctly, it will look like this.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
+
+ 
+
 
 
 
