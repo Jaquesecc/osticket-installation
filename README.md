@@ -172,9 +172,22 @@ Now it's time to install osTicket! Back inside of the “osTicket-Installation-F
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Another osTicket folder was created within the “osTicket-Installation-Files” folder and it contains 2 folders (scripts and upload). Next, I will be copying the “upload” folder into “c:\inetpub\wwwroot” which is the default root directory for websites hosted on a Windows server running IIS. Within “c:\inetpub\wwwroot”, I will rename “upload” to “osTicket”.
+Another osTicket folder was created within the “osTicket-Installation-Files” folder and it contains 2 folders (scripts and upload). Next, I will be copying the “upload” folder into “c:\inetpub\wwwroot” which is the default root directory for websites hosted on a Windows server running IIS. Within “c:\inetpub\wwwroot”, I will rename “upload” to “osTicket”. Make sure to keep this window open.
 
-Still working inside the osticket-vm, 
+Still working inside the osticket-vm, right-click the manilla folder, select File Exlplorer,  and then scroll to the C: drive. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Select inetpub, click wwwroot (this is the root of the webserver). Now drag the upload folder into wwwroot. Select Continue to provide administrator permission. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+To rename the upload folder to osTicket, right-click the folder and make sure to name the folder osTicket without any mistakes. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
 
 
 
