@@ -159,7 +159,39 @@ Double-click PHP Manager, then select Register new PHP version. Click the 3 dots
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, reload IIS (open IIS, stop and start the server).
+Next, I will reload IIS (open IIS, stop and start the server). When changes are made to the configuration files or settings related to osTicket or other web applications hosted on IIS, you often need to reload IIS to apply these changes without restarting the entire server. Reloading IIS can help refresh application pools, which can resolve certain performance issues or memory leaks that might affect osTicket's operation.
+Underneath Connections, right-click osticket-vm, select Stop. Wait a few moments, and right-click osticket-vm once more, select Start.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Now it's time to install osTicket! Back inside of the “osTicket-Installation-Files” folder, I will unzip osTicket by right-clicking osTicket, and selecting Extract All. Select Extract.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Another osTicket folder was created within the “osTicket-Installation-Files” folder and it contains 2 folders (scripts and upload). Next, I will be copying the “upload” folder into “c:\inetpub\wwwroot” which is the default root directory for websites hosted on a Windows server running IIS. Within “c:\inetpub\wwwroot”, I will rename “upload” to “osTicket”.
+
+Still working inside the osticket-vm, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
