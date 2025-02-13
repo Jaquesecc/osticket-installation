@@ -184,9 +184,24 @@ Select inetpub, click wwwroot (this is the root of the webserver). Now drag the 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-To rename the upload folder to osTicket, right-click the folder and make sure to name the folder osTicket without any mistakes. 
+Next, I will rename the Upload folder. To do this, right-click Upload, and scroll down and select Rename. Make sure to type "osTicket" without any mistakes. There is no space between lowercase "os", and "Ticket". Select Continue.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Once again, I will stop and start the server to reload IIS. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. Under Connections, right-click osticket-vm. Select Stop. Wait a few moments to right-click again, and select Start.
+
+Next, I will attempt to load the osTicket website.
+
+
+
+
+
+
+
+
+
+
 
 
 
