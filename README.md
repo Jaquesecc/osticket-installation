@@ -191,13 +191,24 @@ Next, I will rename the Upload folder. To do this, right-click Upload, and scrol
 
 Once again, I will stop and start the server to reload IIS. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. Under Connections, right-click osticket-vm. Select Stop. Wait a few moments to right-click again, and select Start.
 
-Next, I will attempt to load the osTicket website.
+Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking the plus sign. Then select Site, Default Web Site, and osTicket. Then select Browse, all the way to the right of the screen. It is very important that every step is done precisely osTicket was installed correctly, it will look like this. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+In the Recommended section, some of the extensions are not enabled meaning some of the features will not be avaialble. I will continue the installion by going back to IIS and making some configurations. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. If not done already, expand osticket-vm by clicking the plus sign. Then select Sites, Default Web Site, and osTicket. Then double-click PHP Manager.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Then under PHP Extensions, select Enable or disable an extension. The extentions that I will enable are: php_imap.dll, php_intl.dll, and php_opcache.dll. The disabled extensions are inn gray text. To enable, click the particular extension you want, and then select Enable.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Now go back to osTicket within the browser, and refresh to make sure the changes were made. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 
