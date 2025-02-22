@@ -206,15 +206,29 @@ Then under PHP Extensions, select Enable or disable an extension. The extentions
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Now go back to osTicket within the browser, and refresh to make sure the changes were made. 
+Now go back to osTicket within the browser, and refresh to make sure the changes were made. Now you can see that more of the extensions are now enabled. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Now I will be renaming one of the files on the hard drive that osTicket uses for configurations. (C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to ost-config.php). I will also be making sure osTicket has access to make changes to it.
+
+To do this, right-click the manilla folder, and open File Explorer. Open the (C:) Drive on the left, then select inetpub. Select wwwroot, then osTicket. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 
+Scroll down to include. Now scroll down to ost-sampleconfig.php, right-click and select Renanme. Type ost-config.php. It's very important that this is spelled correctly with no mistakes. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Since I renamed the file, I have to assign permissions specifically to osTicket so it can make changes on the backend.
 
+To do this, right-click ost-config.php, and select Properties. Within Properties, select Security.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 
