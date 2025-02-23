@@ -253,16 +253,41 @@ Observe to make sure Everyone has full control, then press Apply. Select Ok twic
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Now osTicket has full control to the configuration file.
+osTicket now has full control to the configuration file.
 
-Going back to the osTicket website, I will be continuing on with the set-up. Select Continue. The Helpdesk Name can be a name of your liking. I will be usuing Jaquese's Help Desk.
+Now I will be going back to the osTicket website and continuing on with the set-up. 
+
+Select Continue. In the System Settigns, Create a Helpdesk Name name of your liking. I will be usuing Jaquese's Help Desk. You can also use any email address. In the Admin User section, use your name. The email address in this section should be different than the one above. For the sake of this lab tutorial, I previously created an Admin Username and Password.  
+
+Before moving on, I have to point out that I created the database application on the backend, so now I have to actually log in and create another database specific to osTicket. Then I will fill in those credentials in the Database Settings Sections. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+To do that, go back into the osTicket installions file folder on the desktop by right-clicking the manilla folder, and select File Explorer. Go to Desktop, and open the osTicket-Installation-Files” folder. 
+Now we will be installing HeidiSQL-which is an application that allows me to make a connection and configure the database.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+After selecting HeidiSQL, select Yes, and accept the License Agreement. Select Next a few times, and then select install.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Make sure to check the box next to Launch HeidiSQL, then select Finish.
 
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+There's an option of opening HeidiSQL manually, but select Skip for now.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Within the HeidiSQL Session Manager, I am going to make a connection to the database, and set up a database for osTicket to use and then finish filling in the credentials on the osTicket website. 
+
+To do this, select New. When we set up the SQL server, we set root as the username
 
 
 
