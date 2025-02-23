@@ -285,12 +285,19 @@ There's an option of opening HeidiSQL manually, but select Skip for now.
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Within the HeidiSQL Session Manager, I am going to make a connection to the database, and set up a database for osTicket to use and then finish filling in the credentials on the osTicket website. 
+Within the HeidiSQL Session Manager, I am going to make a connection to the database and set up a database for osTicket to use. Then I will finish filling in the credentials on the osTicket website. 
 
-To do this, select New. When we set up the SQL server, we set root as the username
+To do this, select New... When I set up the SQL server, I set "root" as the username and password. Fill in both the User and Password, then select Open. If done correctly, it will look like this.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
+Next, I will create a database and name it osTicket. To do this, right-click Unnamed, and select Create new. Click on Database, and then name the database "osTicket". Make sure not to make any mistakes. Select Ok, and you can see that osticket is now listed in the database list.
 
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Now I will continue setting up osTicket in the browser.
 
 
 
