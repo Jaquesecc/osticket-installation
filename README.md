@@ -219,9 +219,11 @@ To do this, right-click the manilla folder, and open File Explorer. Open the (C:
 
 
 
-Scroll down to include. Now scroll down to ost-sampleconfig.php, right-click and select Renanme. Type ost-config.php. It's very important that this is spelled correctly with no mistakes. 
+Scroll down to include. Now scroll down to ost-sampleconfig.php, right-click and select Renanme. 
+Type ost-config.php. It's very important that this is spelled correctly with no mistakes. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
 
 
 Since I renamed the file, I have to assign permissions specifically to osTicket so it can make changes on the backend.
@@ -229,6 +231,45 @@ Since I renamed the file, I have to assign permissions specifically to osTicket 
 To do this, right-click ost-config.php, and select Properties. Within Properties, select Security.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Within the Security tab, go to Advanced. I am going to select Disable inheritance to strip all the current permissions away. Then select Remove all inherited permissions from this object.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+Observe the Permissions tab is completely empty.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Now, within the same box, select Add. Then click on Select a priniciple. Under "Enter the object name to select", type Everyone and then click Check Names. Doing this in real time is not ideal. But for the sake of this lab tutorial, I will give permissions to everyone to make sure osTicket will function properly. Select Ok.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Under Basic Permissions, check Full control, and select Ok. If done correctly, it should look like this. 
+Observe to make sure Everyone has full control, then press Apply. Select Ok twice to continue. 
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Now osTicket has full control to the configuration file.
+
+Going back to the osTicket website, I will be continuing on with the set-up. Select Continue. The Helpdesk Name can be a name of your liking. I will be usuing Jaquese's Help Desk.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
