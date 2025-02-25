@@ -287,17 +287,25 @@ There's an option of opening HeidiSQL manually, but select Skip for now.
 
 Within the HeidiSQL Session Manager, I am going to make a connection to the database and set up a database for osTicket to use. Then I will finish filling in the credentials on the osTicket website. 
 
-To do this, select New... When I set up the SQL server, I set "root" as the username and password. Fill in both the User and Password, then select Open. If done correctly, it will look like this.
+To do this, select New... When I set up the SQL server, I set "root" as the username and password. Fill in both the User and Password, then select Open. This opened a connection in the database. If done correctly, it will look like this.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, I will create a database and name it osTicket. To do this, right-click Unnamed, and select Create new. Click on Database, and then name the database "osTicket". Make sure not to make any mistakes. Select Ok, and you can see that osticket is now listed in the database list.
+Next, I will create a database and name it osTicket. To do this, right-click Unnamed, and select Create new. Click on Database, and then name the database "osTicket". Make sure not to make any mistakes. Select Ok, and you can see that osTicket was created, and is now listed in the database list.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 Now I will continue setting up osTicket in the browser.
+So going back to the browser, I already entered the details for the admin user. Enter the credentails for osTicket for the MySQL database settings. Enter "root" for the username and password. Now select Install Now.
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+
+
+Congratulations! osTicket has successfully been installed!
+
+![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 
