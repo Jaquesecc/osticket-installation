@@ -49,7 +49,7 @@ Open Remote Desktop, and add PC. Paste osticket-vm Public IP Address into the PC
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Enter your User Account credentials (I am using the credentials from when the Virtual Machine was created in Azure), then select Continue. Now you I am logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
+Enter your User Account credentials (I am using the credentials from when the Virtual Machine was created in Azure), then select Continue. Now I am logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
