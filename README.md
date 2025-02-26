@@ -37,7 +37,7 @@ Now select Next, then Networking. Create a new Virtual Network. Keep default set
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Now the Virtual Machine deployment is complete. The next step is to obtain the IP Address for osticket-vm and log into the Remote Desktop. To do this, type Virtual Machine in the search bar, and right-click the IP Address of osticket-vm, then slelct copy. 
+Now the Virtual Machine deployment is complete. The next step is to obtain the IP Address for osticket-vm and log into the Remote Desktop. To do this, type Virtual Machine in the search bar, and right-click the IP Address of osticket-vm, then slelct Copy. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
