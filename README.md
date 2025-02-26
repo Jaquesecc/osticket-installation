@@ -32,7 +32,7 @@ In the search bar in Azure, type Virtual Machines, then select. Create a new Res
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause and error in the end. Then select Review and Create, then click Create.
+Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
@@ -63,7 +63,7 @@ Within the Virtual Machine, open Microsoft Edge.
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-The document that I will be usuing is the Lab Checklist URL obtained from the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
+The document that I will be usuing is the Lab Checklist obtained from the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
@@ -86,7 +86,7 @@ We will use the files in this folder to install osTicket and some of the depende
 Next, we will enable IIS within Windows, with CGI installed as well. IIS is the webserver that allows you to host and manage websites, web applications, and services on a Windows server. CGI (Common Gateway Interface) is a standard protocol used to enable web servers to interact with external programs allowing them to generate dynamic content. It acts as a bridge between the web server and applications running on the server.
 
 
-To enable IIS, click the Start Menu, and go to the Control Panel by typing "control". Open the Control Panel, and click on Programs (Uninstall a program). I'm not going to actually unistall anything, but this opens the window I need to use.
+To enable IIS, click the Start Menu, and go to the Control Panel by typing "control". Open the Control Panel, and click on Programs-Uninstall a program. I'm not going to actually unistall anything, but this opens the window I need to use.
 
   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
@@ -96,7 +96,7 @@ On the left, select Turn Windows Feature On or Off. Scroll down, and check the b
    ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-  Continue on to install CGI. Underneath Internet Information Services, select the plus sign to expand World Wide Web Services. Expand Application Development Features, then check the box next to CGI. Select Ok.
+Continue on to install CGI. Underneath Internet Information Services, select the plus sign to expand World Wide Web Services. Expand Application Development Features, then check the box next to CGI. Select Ok.
 
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
@@ -106,23 +106,23 @@ On the left, select Turn Windows Feature On or Off. Scroll down, and check the b
 Next I will continue installing the remaining files. Next, I will be installing PHP Manager for IIS. PHP Manager for IIS is a management tool that helps configure and manage PHP installations on Microsoft IIS.  It simplifies the process of setting up, configuring, and optimizing PHP on IIS servers.
 
 
-From the “osTicket-Installation-Files” folder, and select PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi). Continue the prompts to install by selecting Next, I Agree, and Install.
+From the “osTicket-Installation-Files” folder, and select PHP Manager for IIS. Continue the prompts to install by selecting Next, I Agree, and Install.
 
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-From the “osTicket-Installation-Files” folder, install the Rewrite Module. This is a feature that allows you to modify URLs dynamically. It helps create user-friendly and SEO-friendly URLs by rewriting incoming requests before they reach your web application. From the “osTicket-Installation-Files” folder, select rewrite_amd64_en-US.msi. Check the box to agree, and install.
+From the “osTicket-Installation-Files” folder, install the Rewrite Module. This is a feature that allows you to modify URLs dynamically. It helps create user-friendly and SEO-friendly URLs by rewriting incoming requests before they reach your web application. From the “osTicket-Installation-Files” folder, select Rewrite. Check the box to agree, and install.
 
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, I will create a directory on Local Disk C: (C:\PHP). The C: drive is the primary partition on a Windows computer where the operating system (Windows), system files, and installed programs are typically stored.
+Next, I will create a directory on Local Disk C:. The C: drive is the primary partition on a Windows computer where the operating system, system files, and installed programs are typically stored.
 In the same File, scroll down to the C: drive. Right-click to create a New folder, and name it PHP.
 
  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
- Next, I will unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder. From the “osTicket-Installation-Files” folder, Right-click php-7.3.8-nts-Win32-VC15-x86.zip, then select Extract All.
+ Next, I will unzip PHP into the “C:\PHP” folder. From the “osTicket-Installation-Files” folder, Right-click PHP, then select Extract All.
 
   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
@@ -133,12 +133,12 @@ Instead of selecting Extract right away, select Browse. Click on Windows C:, sel
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, install the VC Redistributable File. From the “osTicket-Installation-Files” folder, scroll down to VC_redist.x86.exe., double-click, and install.
+Next, install the VC Redistributable File. From the “osTicket-Installation-Files” folder, scroll down to VC Redistributable, double-click, and install.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, I will install MySQL 5.5.62. MySQL serves as the database management system where osTicket stores all its data. osTicket uses MySQL to store ticket information, user details, settings, and other data required for its operation. From the “osTicket-Installation-Files” folder, douoble-click on MySQL, agree to the terms and conditions by checking the box, selelct Next, Typical, and Install. Check the box to launch the MySQL Configuration Wizard. Then select Finish.
+Next, I will install MySQL. MySQL serves as the database management system where osTicket stores all its data. osTicket uses MySQL to store ticket information, user details, settings, and other data required for its operation. From the “osTicket-Installation-Files” folder, douoble-click on MySQL, agree to the terms and conditions by checking the box, selelct Next, Typical, and Install. Check the box to launch the MySQL Configuration Wizard. Then select Finish.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
@@ -153,7 +153,7 @@ Now that the datatbase is installed, I will be configuring systems inside of the
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
-Next, I will register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe). This basically means I'm making the web server aware of the existence of PHP, and telling the computer where it is located. 
+Next, I will register PHP from within IIS. This basically means I'm making the web server aware of the existence of PHP, and telling the computer where it is located. 
 Double-click PHP Manager, then select Register new PHP version. Click the 3 dots to the right to browse to the C: drive, select the PHP folder, then double-click the php-cgi folder. Select Ok.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
