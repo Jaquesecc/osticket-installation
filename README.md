@@ -4,10 +4,7 @@
 
 <h1>osTicket - Prerequisites and Installation</h1>
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-What I'll be doing:
--Setting up a Virtual Machine in Azure
--Installing osTicket requirements
--Installing osTicket 
+
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,43 +19,43 @@ What I'll be doing:
 <h2>List of Prerequisites</h2>
 
 - Web Server: Microsoft IIS
-- Database: MySQL 5.5.62
-- PHP: PHPManagerForIIS_V1.5.0.msi
+- Database: MySQL 
+- PHP Mananger
 - Web Browser: Latest version of Chrome or Safari
 - Operating System: Windows or Mac
 
 
 <h2>Create A Virtual Machine</h2>
 
-In Azure, go to Virtual Machines and create a new Resource Group, choose a name of your liking. For the purpose of this demonstration, the Resource Group will be named osTicket. Next, create a Virtual Machine name (osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next: Disks.
+In Azure, go to Virtual Machines and create a new Resource Group, choose a name of your liking. For the purpose of this demonstration, the Resource Group will be named osTicket. Next, create a Virtual Machine name (osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next, then Disks.
   
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Select Next: Networking. Create a new Virtual Network. Keep default settings for Ports, check the Licensing Agreement box at the bottom (don't skip this!), then select Review and Create, then click Create.
+Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom (don't skip this!). Then select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Once the Virtual Machine deployment is complete, search Virtual Machine, and copy the Public IP Address for osticket-vm.
+Now the Virtual Machine deployment is complete. The next step is to obtain the IP Address for osticket-vm and log into the Remote Desktop. To do this, type Virtual Machine in the search bar, and right-click the IP Address of osticket-vm, then slelct copy. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-The next step is to open Remote Desktop, and login to the osticket-vm. Next add PC, and then paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket. Select Add. 
+Open Remote Desktop, and add PC. Paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket (make sure the "T" is capitolized). Select Add. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Enter your User Account credentials (same credentials from when the Virtual Machine was created in Azure), then Continue. Now you are logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
+Enter your User Account credentials (I am using the credentials from when the Virtual Machine was created in Azure), then select Continue. Now you I am logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
 
-The remaining information may seem ambiguous, but essentially, I will be installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtula Machine.
+For the remainder of this tutorial, I will be installing the dependencies that are required for osTicket. To work and run, osTicket runs in a web browser, so it requires a webserver and database to be installed and configured. The remaining work will be done inside the Virtual Machine.
 
 <h2>Installation Steps</h2>
 Within the Virtual Machine, open Microsoft Edge. 
