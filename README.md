@@ -32,7 +32,7 @@ In the search bar in Azure, type Virtual Machines, then select. Create a new Res
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
 
-Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom (don't skip this!). Then select Review and Create, then click Create.
+Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause and error in the end. Then select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 
