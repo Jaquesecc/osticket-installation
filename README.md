@@ -31,6 +31,13 @@ The first step is to create a Virtual Machine in Microsoft Azure. Create an acco
   
 ![image](https://github.com/user-attachments/assets/438d0c20-9dea-4a5f-a2e3-350cd7bdafce)
 
+![image](https://github.com/user-attachments/assets/e7c15fdc-a6bf-4f1d-a677-e7e43cfc00e5)
+
+![image](https://github.com/user-attachments/assets/fe8a425e-f9ee-47c4-ba6e-79d7ffc7e2f2)
+
+![image](https://github.com/user-attachments/assets/6984d449-4107-4cd6-93e3-c0a1f6c632e1)
+
+
 
 Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
 
@@ -39,19 +46,21 @@ Now select Next, then Networking. Create a new Virtual Network. Keep default set
 
 Now the Virtual Machine deployment is complete. The next step is to obtain the IP Address for osticket-vm and log into the Remote Desktop. To do this, type Virtual Machine in the search bar, and right-click the IP Address of osticket-vm, then slelct Copy. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+![image](https://github.com/user-attachments/assets/a627befe-80fe-4c10-b3cc-abd32935ca7c)
+
+![image](https://github.com/user-attachments/assets/db81cd8e-636e-480b-9950-3b691487a370)
 
 
-Open Remote Desktop, and add PC. Paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket (make sure the "T" is capitolized). Select Add. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+In Windows, open Remote Desktop, and select Add PC. Paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket (make sure the "T" is capitolized). Select Add. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+![image](https://github.com/user-attachments/assets/840f9be0-154e-4491-80a3-638f8428f224)
 
 
 Enter your User Account credentials (I am using the credentials from when the Virtual Machine was created in Azure), then select Continue. Now I am logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+![image](https://github.com/user-attachments/assets/728fb0cd-019d-4117-ad9a-9f589d1271cd)
 
 
 
@@ -60,11 +69,13 @@ For the remainder of this tutorial, I will be installing the dependencies that a
 <h2>Installation Steps</h2>
 Within the Virtual Machine, open Microsoft Edge. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+![image](https://github.com/user-attachments/assets/1b90c091-d7f1-45a8-9abd-92f929ba903f)
 
 
-The document that I will be usuing is the Lab Checklist obtained from the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+The document that I will be usuing to install osTicket dependencies is from the Lab Checklist obtained in the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
+
+![image](https://github.com/user-attachments/assets/ef9e02e0-bd38-44df-bf66-f0aca6ff4bfc)
+
 
 
 Now that the Lab Checklist is open inside the Virtual Machine, click the link and download osTicket-Installation-Files.zip 
