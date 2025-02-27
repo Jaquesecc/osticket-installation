@@ -27,7 +27,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Create A Virtual Machine</h2>
 
-The first step is to create a Virtual Machine in Microsoft Azure. Create an account in Azure, then under Azure Services, select Virtual Machines. Create a new Resource Group, and choose a name of your liking. For the purpose of this tutorial, the Resource Group will be named osTicket. Next, create a Virtual Machine name (I will use osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next, then Disks.
+The first step is to create a Virtual Machine in Microsoft Azure. To do this, create an account in Microsoft Azure. Once logged in, under Azure Services, select Virtual Machines. Create a new Resource Group, and choose a name of your liking. For the purpose of this tutorial, the Resource Group will be named osTicket. Next, create a Virtual Machine name (I will use osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. Select Next, then Disks.
   
 ![image](https://github.com/user-attachments/assets/438d0c20-9dea-4a5f-a2e3-350cd7bdafce)
 
