@@ -27,26 +27,29 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Create A Virtual Machine</h2>
 
-The first step is to create a Virtual Machine in Microsoft Azure. To do this, create an account in Azure, and use credentials to log in. Once logged in, under Azure Services, select Virtual Machines. Create a new Resource Group, and choose a name of your liking. For the purpose of this tutorial, the Resource Group will be named osTicket. Next, create a Virtual Machine name (I will use osticket-vm). Set the correct region, and set the image to Windows 10 Pro. Select a Size, then create Administrator Account credentials. For the username and password, I will be using labuser and osTicketPassword1!. Select Next, then Disks.
-  
+The first step is to create a Virtual Machine in Microsoft Azure. To do this, create an account in Azure, and use credentials to log in. Once logged in, under Azure Services, select Virtual Machines. Create a new Resource Group, and choose a name of your liking. For the purpose of this tutorial, the Resource Group will be named osTicket. 
+
 ![image](https://github.com/user-attachments/assets/438d0c20-9dea-4a5f-a2e3-350cd7bdafce)
 
+
+Next, create a Virtual Machine name (I will use osticket-vm). Set the correct Region, leave the default Availability Zone, and set the Image to Windows 10 Pro. Next, select a Size.
+  
 ![image](https://github.com/user-attachments/assets/e7c15fdc-a6bf-4f1d-a677-e7e43cfc00e5)
+
+
+Now create Administrator Account credentials. For the username and password, I will be using labuser and osTicketPassword1!. Select Next: Disks. Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/fe8a425e-f9ee-47c4-ba6e-79d7ffc7e2f2)
 
-![image](https://github.com/user-attachments/assets/6984d449-4107-4cd6-93e3-c0a1f6c632e1)
 
 
-
-Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
-
-
-Now the Virtual Machine deployment is complete. The next step is to obtain the IP Address for osticket-vm and log into the Remote Desktop. To do this, type Virtual Machine in the search bar, and right-click the IP Address of osticket-vm, then select Copy. 
+Now the Virtual Machine deployment is complete. 
 
 ![image](https://github.com/user-attachments/assets/a627befe-80fe-4c10-b3cc-abd32935ca7c)
+
+
+
+The next step is to obtain the IP Address for osticket-vm and log into the Remote Desktop. To do this, type Virtual Machine in the search bar, and right-click the IP Address of osticket-vm, then select Copy. 
 
 ![image](https://github.com/user-attachments/assets/db81cd8e-636e-480b-9950-3b691487a370)
 
@@ -59,7 +62,6 @@ In Windows, open Remote Desktop, and select Add PC. Paste osticket-vm Public IP 
 
 Enter your User Account credentials (I am using the credentials from when the Virtual Machine was created in Azure), then select Continue. Now I am logged in to the osTicket Remote Desktop. If done successfully, it will look like this. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
 ![image](https://github.com/user-attachments/assets/728fb0cd-019d-4117-ad9a-9f589d1271cd)
 
 
