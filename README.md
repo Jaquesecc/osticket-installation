@@ -37,7 +37,7 @@ Next, create a Virtual Machine name (I will use osticket-vm). Set the correct Re
 ![image](https://github.com/user-attachments/assets/e7c15fdc-a6bf-4f1d-a677-e7e43cfc00e5)
 
 
-Now create Administrator Account credentials. For the username and password, I will be using labuser and osTicketPassword1!. Select Next: Disks. Now select Next, then Networking. Create a new Virtual Network. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
+Now create Administrator Account credentials. For the username and password, I will be using labuser and osTicketPassword1!. Select Next: Disks. Now select Next, then Networking. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/fe8a425e-f9ee-47c4-ba6e-79d7ffc7e2f2)
 
