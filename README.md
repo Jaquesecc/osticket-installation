@@ -74,21 +74,22 @@ Within the Virtual Machine, open Microsoft Edge.
 ![image](https://github.com/user-attachments/assets/1b90c091-d7f1-45a8-9abd-92f929ba903f)
 
 
-The document that I will be usuing to install osTicket dependencies is from the Lab Checklist obtained in the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
+The document that I will be usuing to install osTicket dependencies is from the Lab Checklist obtained in the CourseCareers Information Technology Course: Module 4 Lab 3: Ticketing Systems. 
 
 ![image](https://github.com/user-attachments/assets/ef9e02e0-bd38-44df-bf66-f0aca6ff4bfc)
 
 
 
+I copied the Lab Checklist URL, and pasted it inside the Virtual Machine browser. 
 Now that the Lab Checklist is open inside the Virtual Machine, click the link and download osTicket-Installation-Files.zip 
 We will use the files in this folder to install osTicket and some of the dependencies.
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)  
+ ![image](https://github.com/user-attachments/assets/0682e5ef-e76a-4d69-8a31-085010901f08)
 
 
  Once osTicket-Installation-Files.zip is downloaded, open the folder and drag onto the desktop.
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1) 
+![image](https://github.com/user-attachments/assets/4c06b31a-bb17-4581-82c4-519e26cbf338)
 
 
  Right-click the folder, then select Extract All. Then select Extract. Make sure it's going onto the desktop in osTicket. If done correctly, it will look like this.
