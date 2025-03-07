@@ -92,9 +92,20 @@ We will use the files in this folder to install osTicket and some of the depende
 ![image](https://github.com/user-attachments/assets/4c06b31a-bb17-4581-82c4-519e26cbf338)
 
 
- Right-click the folder, then select Extract All. Then select Extract. Make sure it's going onto the desktop in osTicket. If done correctly, it will look like this.
+ Right-click the folder, then select Extract All. 
 
-  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+ ![image](https://github.com/user-attachments/assets/596e9696-1831-4bcd-b0dc-76f1ab2fc39f)
+
+
+ Then select Extract. Make sure it's going onto the desktop in osTicket. 
+![image](https://github.com/user-attachments/assets/54ab4a12-cdc6-400b-8449-0eb125259cbb)
+
+
+If done correctly, it will look like this.
+![image](https://github.com/user-attachments/assets/9725ed2b-7afd-48b2-bc7a-4adc3715e2cd)
+
+ 
+ 
 
 
 Next, we will enable IIS within Windows, with CGI installed as well. IIS is the webserver that allows you to host and manage websites, web applications, and services on a Windows server. CGI (Common Gateway Interface) is a standard protocol used to enable web servers to interact with external programs allowing them to generate dynamic content. It acts as a bridge between the web server and applications running on the server.
