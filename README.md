@@ -161,9 +161,9 @@ Instead of selecting Extract right away, select Browse. Click on Windows C:, sel
 ![image](https://github.com/user-attachments/assets/e9d92b4e-4cb8-453f-bc7b-9ab636fccbd1)
 
 
-Next, install the VC Redistributable File. This is another requirement that osTicket needs to use to be able to function properly. From the “osTicket-Installation-Files” folder, scroll down to VC Redistributable, double-click, and install.
+Next, install the VC Redistributable File. This is another requirement that osTicket will need to use to be able to function properly. From the “osTicket-Installation-Files” folder, scroll down to VC Redistributable, double-click, and install.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/f3a9ec13-b440-4e39-a806-9e8a09582345)
 
 
 Next, I will install MySQL. MySQL serves as the database management system where osTicket stores all its data. osTicket uses MySQL to store ticket information, user details, settings, and other data required for its operation. From the “osTicket-Installation-Files” folder, douoble-click on MySQL, agree to the terms and conditions by checking the box, selelct Next, Typical, and Install. Check the box to launch the MySQL Configuration Wizard. Then select Finish.
