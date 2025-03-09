@@ -113,52 +113,55 @@ Next, we will enable IIS within Windows, with CGI installed as well. IIS is the 
 
 To enable IIS, click the Start Menu, and go to the Control Panel by typing "control". Open the Control Panel, and click on Programs-Uninstall a program. I'm not going to actually unistall anything, but this opens the window I need to use.
 
-  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/4463f15b-a73d-4365-8bcd-70ec2bcfc613)
+
+
 
 
 On the left, select Turn Windows Feature On or Off. Scroll down, and check the box that says Internt Information Services. Expand by clicking the plus sign.
 
-   ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+  ![image](https://github.com/user-attachments/assets/8299b15d-2120-4e38-aee7-f055f2aa47b7)
+  
 
 
 Continue on to install CGI. Underneath Internet Information Services, select the plus sign to expand World Wide Web Services. Expand Application Development Features, then check the box next to CGI. Select Ok.
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/1b7642b7-27e7-4ac9-8bc5-3277a1af9a2b)
+
 
 
 Next I will continue installing the remaining files. Next, I will be installing PHP Manager for IIS. PHP Manager for IIS is a management tool that helps configure and manage PHP installations on Microsoft IIS.  It simplifies the process of setting up, configuring, and optimizing PHP on IIS servers.
 
 
-From the “osTicket-Installation-Files” folder, and select PHP Manager for IIS. Continue the prompts to install by selecting Next, I Agree, and Install.
+From the “osTicket-Installation-Files” folder, select PHP Manager for IIS. Continue the prompts to install by selecting Next, I Agree, and Install.
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/36cc06b0-fd8a-44f5-9b44-e0830a6b9ddb)
 
 
 From the “osTicket-Installation-Files” folder, install the Rewrite Module. This is a feature that allows you to modify URLs dynamically. It helps create user-friendly and SEO-friendly URLs by rewriting incoming requests before they reach your web application. From the “osTicket-Installation-Files” folder, select Rewrite. Check the box to agree, and install.
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/b8e5015d-bad4-4fb8-b5d4-877210ae41b0)
 
 
 Next, I will create a directory on Local Disk C:. The C: drive is the primary partition on a Windows computer where the operating system, system files, and installed programs are typically stored.
 In the same File, scroll down to the C: drive. Right-click to create a New folder, and name it PHP.
 
- ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/e15807da-5531-4d2c-8322-b34e943eec72)
 
 
  Next, I will unzip PHP into the “C:\PHP” folder. From the “osTicket-Installation-Files” folder, Right-click PHP, then select Extract All.
 
-  ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+ ![image](https://github.com/user-attachments/assets/c77977d8-38c6-47e9-9005-d9bc812ab356)
 
 
 
 Instead of selecting Extract right away, select Browse. Click on Windows C:, select PHP, then Select Folder. Now select Extract. The PHP folder is now extracted along with the files. If done correctly, it will look like this.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/e9d92b4e-4cb8-453f-bc7b-9ab636fccbd1)
 
 
-Next, install the VC Redistributable File. From the “osTicket-Installation-Files” folder, scroll down to VC Redistributable, double-click, and install.
+Next, install the VC Redistributable File. This is another requirement that osTicket needs to use to be able to function properly. From the “osTicket-Installation-Files” folder, scroll down to VC Redistributable, double-click, and install.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
