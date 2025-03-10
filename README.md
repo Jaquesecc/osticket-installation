@@ -166,14 +166,25 @@ Next, install the VC Redistributable File. This is another requirement that osTi
 ![image](https://github.com/user-attachments/assets/f3a9ec13-b440-4e39-a806-9e8a09582345)
 
 
-Next, I will install MySQL. MySQL serves as the database management system where osTicket stores all its data. osTicket uses MySQL to store ticket information, user details, settings, and other data required for its operation. From the “osTicket-Installation-Files” folder, douoble-click on MySQL, agree to the terms and conditions by checking the box, selelct Next, Typical, and Install. Check the box to launch the MySQL Configuration Wizard. Then select Finish.
+Next, I will install MySQL. MySQL serves as the database management system where osTicket stores all its data. osTicket uses MySQL to store ticket information, user details, settings, and other data required for its operation. From the “osTicket-Installation-Files” folder, douoble-click on MySQL, agree to the terms and conditions by checking the box, selelct Next, Typical, and Install. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/84eef51c-cd06-4e61-b0db-ea7ae7c4da2b)
 
 
-For the MySQL Configuration Wizard, select Next, then click on Standard Configuration. Select "Next" twice. For Security options, check the box to Modify Security Settings. It is very important to make sure that the username and password are the same word with no errors. For the purpose of this demo, I will be using the word "root". Select Next, Execute, and Finish.
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+Check the box to launch the MySQL Configuration Wizard. Then select Finish.
 
+![image](https://github.com/user-attachments/assets/1b76df07-a5f6-4895-9051-79c87e3c9d63)
+
+
+For the MySQL Configuration Wizard, select Next, then click on Standard Configuration. Select "Next" twice. 
+
+![image](https://github.com/user-attachments/assets/aac9ec98-4c6d-49cc-834c-c1a09dbabe02)
+
+
+
+For Security options, check the box to Modify Security Settings. It is very important to make sure that the username and password are the same word with no errors. For the purpose of this demo, I will be using the word "root". Select Next, Execute, and Finish.
+
+![image](https://github.com/user-attachments/assets/8925ec8b-aee1-4fc6-b1ca-6332792a2952)
 
 
 Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, I will open IIS as an Administrator. Click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
