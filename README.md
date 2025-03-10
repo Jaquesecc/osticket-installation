@@ -187,7 +187,7 @@ For Security options, check the box to Modify Security Settings. It is very impo
 ![image](https://github.com/user-attachments/assets/8925ec8b-aee1-4fc6-b1ca-6332792a2952)
 
 
-Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, I will open IIS as an Administrator. Click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
+Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, I will open IIS as an Administrator. To do this, click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
 
 ![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
