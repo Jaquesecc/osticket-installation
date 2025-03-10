@@ -204,35 +204,34 @@ Underneath Connections, right-click osticket-vm, select Stop. Wait a few moments
 ![image](https://github.com/user-attachments/assets/6ffe87ab-76a8-4cbd-bec0-0f205bc26177)
 
 
-Now it's time to install osTicket! Back inside of the “osTicket-Installation-Files” folder, I will unzip osTicket by right-clicking osTicket, and selecting Extract All. Select Extract.
+Now it's time to install osTicket! Back inside of the “osTicket-Installation-Files” folder, right-click osTicket, and selecting Extract All. Select Extract.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/7439937e-07aa-4fab-b3e2-6fb973831224)
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
 
 
 Another osTicket folder was created within the “osTicket-Installation-Files” folder and it contains 2 folders (scripts and upload). Next, I will be copying the “upload” folder into “c:\inetpub\wwwroot” which is the default root directory for websites hosted on a Windows server running IIS. Within “c:\inetpub\wwwroot”, I will rename “upload” to “osTicket”. Make sure to keep this window open.
 
-Still working inside the osticket-vm, right-click the manilla folder, select File Exlplorer,  and then scroll to the C: drive. 
+To do this, right-click the manilla folder, select File Exlplorer,  and then scroll to the C: drive. Select inetpub, click wwwroot (this is the root of the webserver). Now drag the upload folder into wwwroot. Select Continue to provide administrator permission. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Select inetpub, click wwwroot (this is the root of the webserver). Now drag the upload folder into wwwroot. Select Continue to provide administrator permission. 
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/1a578757-b85a-43b6-bfe4-03959b916f21)
 
 
 Next, I will rename the Upload folder. To do this, right-click Upload, and scroll down and select Rename. Make sure to type "osTicket" without any mistakes. There is no space between lowercase "os", and "Ticket". Select Continue.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/712d6f57-178e-49f0-9f22-ed10e96fca9c)
 
 
 Once again, I will stop and start the server to reload IIS. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. Under Connections, right-click osticket-vm. Select Stop. Wait a few moments to right-click again, and select Start.
 
-Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking the plus sign. Then select Site, Default Web Site, and osTicket. Then select Browse, all the way to the right of the screen. It is very important that every step is done precisely osTicket was installed correctly, it will look like this. 
+Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking the plus sign. Then select Site, Default Web Site, and osTicket. Then select Browse, all the way to the right of the screen. It is very important that every step is done precisely. If osTicket was installed correctly, it will look like this. 
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/5e76a6c7-6964-49df-a3fd-01b3ec5c9d9b)
+
+
+It is very important that every step is done precisely. If osTicket was installed correctly, it will look like this. Congratulations!
+
+![image](https://github.com/user-attachments/assets/c971748a-cc70-4fd3-831d-2a91ac8c43f2)
 
 
 In the Recommended section, some of the extensions are not enabled meaning some of the features will not be avaialble. I will continue the installion by going back to IIS and making some configurations. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. If not done already, expand osticket-vm by clicking the plus sign. Then select Sites, Default Web Site, and osTicket. Then double-click PHP Manager.
