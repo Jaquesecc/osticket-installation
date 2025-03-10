@@ -32,12 +32,12 @@ The first step is to create a Virtual Machine in Microsoft Azure. To do this, cr
 ![image](https://github.com/user-attachments/assets/438d0c20-9dea-4a5f-a2e3-350cd7bdafce)
 
 
-Next, create a Virtual Machine name (I will use osticket-vm). Set the correct Region, leave the default Availability Zone, and set the Image to Windows 10 Pro. Next, select a Size.
+Next, create a Virtual Machine Name (I will use osticket-vm). Set the correct Region, leave the default Availability Zone, and set the Image to Windows 10 Pro. Next, select a Size.
   
 ![image](https://github.com/user-attachments/assets/e7c15fdc-a6bf-4f1d-a677-e7e43cfc00e5)
 
 
-Now create Administrator Account credentials. For the username and password, I will be using labuser and osTicketPassword1!. Select Next: Disks. Now select Next, then Networking. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Then select Review and Create, then click Create.
+Now create Administrator Account credentials. For the username and password, I will be using labuser and osTicketPassword1!. Select Next: Disks. Now select Next. Keep default settings for Ports, and check the Licensing Agreement box at the bottom. It's important not to skip checking this box, as it will cause an error in the end. Now select Review and Create, then click Create.
 
 ![image](https://github.com/user-attachments/assets/fe8a425e-f9ee-47c4-ba6e-79d7ffc7e2f2)
 
@@ -55,7 +55,7 @@ The next step is to obtain the IP Address for osticket-vm and log into the Remot
 
 
 
-In Windows, open Remote Desktop, and select Add PC. Paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket (make sure the "T" is capitolized). Select Add. 
+Now it is time to log into the Remote Desktop. In Windows, open Remote Desktop, and select Add PC. Paste osticket-vm Public IP Address into the PC Name. I will be naming the Virtual Machine osTicket (make sure the "T" is capitolized). Select Add. 
 
 ![image](https://github.com/user-attachments/assets/840f9be0-154e-4491-80a3-638f8428f224)
 
@@ -131,7 +131,7 @@ Continue on to install CGI. Underneath Internet Information Services, select the
 
 
 
-Next I will continue installing the remaining files. Next, I will be installing PHP Manager for IIS. PHP Manager for IIS is a management tool that helps configure and manage PHP installations on Microsoft IIS.  It simplifies the process of setting up, configuring, and optimizing PHP on IIS servers.
+Next I will continue installing the remaining files. I will be installing PHP Manager for IIS. PHP Manager for IIS is a management tool that helps configure and manage PHP installations on Microsoft IIS.  It simplifies the process of setting up, configuring, and optimizing PHP on IIS servers.
 
 
 From the “osTicket-Installation-Files” folder, select PHP Manager for IIS. Continue the prompts to install by selecting Next, I Agree, and Install.
