@@ -189,19 +189,19 @@ For Security options, check the box to Modify Security Settings. It is very impo
 
 Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, I will open IIS as an Administrator. To do this, click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/c3f5db03-240f-42cc-9601-88147855989b)
 
 
 Next, I will register PHP from within IIS. This basically means I'm making the web server aware of the existence of PHP, and telling the computer where it is located. 
 Double-click PHP Manager, then select Register new PHP version. Click the 3 dots to the right to browse to the C: drive, select the PHP folder, then double-click the php-cgi folder. Select Ok.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/f59056cf-4c2f-4fda-a9c5-12b4533ac196)
 
 
 Next, I will reload IIS (open IIS, stop and start the server). When changes are made to the configuration files or settings related to osTicket or other web applications hosted on IIS, you often need to reload IIS to apply these changes without restarting the entire server. Reloading IIS can help refresh application pools, which can resolve certain performance issues or memory leaks that might affect osTicket's operation.
 Underneath Connections, right-click osticket-vm, select Stop. Wait a few moments, and right-click osticket-vm once more, select Start.
 
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
+![image](https://github.com/user-attachments/assets/6ffe87ab-76a8-4cbd-bec0-0f205bc26177)
 
 
 Now it's time to install osTicket! Back inside of the “osTicket-Installation-Files” folder, I will unzip osTicket by right-clicking osTicket, and selecting Extract All. Select Extract.
