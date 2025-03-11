@@ -187,7 +187,7 @@ For Security options, check the box to Modify Security Settings. It is very impo
 ![image](https://github.com/user-attachments/assets/8925ec8b-aee1-4fc6-b1ca-6332792a2952)
 
 
-Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, I will open IIS as an Administrator. To do this, click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
+Now that the datatbase is installed, I will be configuring systems inside of the web server. Next, open IIS as an Administrator. To do this, click the Start Menu, and start typing IIS. Right-click Internet Information Services, then select Run As Administrator.
 
 ![image](https://github.com/user-attachments/assets/c3f5db03-240f-42cc-9601-88147855989b)
 
@@ -224,7 +224,7 @@ Next, I will rename the Upload folder. To do this, right-click Upload, and scrol
 
 Once again, I will stop and start the server to reload IIS. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. Under Connections, right-click osticket-vm. Select Stop. Wait a few moments to right-click again, and select Start.
 
-Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking the plus sign. Then select Site, Default Web Site, and osTicket. Then select Browse, all the way to the right of the screen. It is very important that every step is done precisely. If osTicket was installed correctly, it will look like this. 
+Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking the plus sign. Then select Site, Default Web Site, and osTicket. Then select Browse, all the way to the right of the window. 
 
 ![image](https://github.com/user-attachments/assets/5e76a6c7-6964-49df-a3fd-01b3ec5c9d9b)
 
@@ -232,127 +232,6 @@ Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking t
 It is very important that every step is done precisely. If osTicket was installed correctly, it will look like this. Congratulations!
 
 ![image](https://github.com/user-attachments/assets/c971748a-cc70-4fd3-831d-2a91ac8c43f2)
-
-
-In the Recommended section, some of the extensions are not enabled meaning some of the features will not be avaialble. I will continue the installion by going back to IIS and making some configurations. To do this, go to the Start Menu, and type IIS. Right-click Internet Information Services Mananger, and select Run as administrator. If not done already, expand osticket-vm by clicking the plus sign. Then select Sites, Default Web Site, and osTicket. Then double-click PHP Manager.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Then under PHP Extensions, select Enable or disable an extension. The extentions that I will enable are: php_imap.dll, php_intl.dll, and php_opcache.dll. The disabled extensions are inn gray text. To enable, click the particular extension you want, and then select Enable.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Now go back to osTicket within the browser, and refresh to make sure the changes were made. Now you can see that more of the extensions are now enabled. 
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Now I will be renaming one of the files on the hard drive that osTicket uses for configurations. (C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to ost-config.php). I will also be making sure osTicket has access to make changes to it.
-
-To do this, right-click the manilla folder, and open File Explorer. Open the (C:) Drive on the left, then select inetpub. Select wwwroot, then osTicket. 
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-
-Scroll down to include. Now scroll down to ost-sampleconfig.php, right-click and select Renanme. 
-Type ost-config.php. It's very important that this is spelled correctly with no mistakes. 
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-
-Since I renamed the file, I have to assign permissions specifically to osTicket so it can make changes on the backend.
-
-To do this, right-click ost-config.php, and select Properties. Within Properties, select Security.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Within the Security tab, go to Advanced. I am going to select Disable inheritance to strip all the current permissions away. Then select Remove all inherited permissions from this object.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-Observe the Permissions tab is completely empty.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Now, within the same box, select Add. Then click on Select a priniciple. Under "Enter the object name to select", type Everyone and then click Check Names. Doing this in real time is not ideal. But for the sake of this lab tutorial, I will give permissions to everyone to make sure osTicket will function properly. Select Ok.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Under Basic Permissions, check Full control, and select Ok. If done correctly, it should look like this. 
-Observe to make sure Everyone has full control, then press Apply. Select Ok twice to continue. 
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-osTicket now has full control to the configuration file.
-
-Now I will be going back to the osTicket website and continuing on with the set-up. 
-
-Select Continue. In the System Settigns, Create a Helpdesk Name name of your liking. I will be usuing Jaquese's Help Desk. You can also use any email address. In the Admin User section, use your name. The email address in this section should be different than the one above. For the sake of this lab tutorial, I previously created an Admin Username and Password.  
-
-Before moving on, I have to point out that I created the database application on the backend, so now I have to actually log in and create another database specific to osTicket. Then I will fill in those credentials in the Database Settings Sections. 
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-To do that, go back into the osTicket installions file folder on the desktop by right-clicking the manilla folder, and select File Explorer. Go to Desktop, and open the osTicket-Installation-Files” folder. 
-Now we will be installing HeidiSQL-which is an application that allows me to make a connection and configure the database.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-After selecting HeidiSQL, select Yes, and accept the License Agreement. Select Next a few times, and then select install.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Make sure to check the box next to Launch HeidiSQL, then select Finish.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-There's an option of opening HeidiSQL manually, but select Skip for now.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Within the HeidiSQL Session Manager, I am going to make a connection to the database and set up a database for osTicket to use. Then I will finish filling in the credentials on the osTicket website. 
-
-To do this, select New... When I set up the SQL server, I set "root" as the username and password. Fill in both the User and Password, then select Open. This opened a connection in the database. If done correctly, it will look like this.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Next, I will create a database and name it osTicket. To do this, right-click Unnamed, and select Create new. Click on Database, and then name the database "osTicket". Make sure not to make any mistakes. Select Ok, and you can see that osTicket was created, and is now listed in the database list.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Now I will continue setting up osTicket in the browser.
-So going back to the browser, I already entered the details for the admin user. Enter the credentails for osTicket for the MySQL database settings. Enter "root" for the username and password. Now select Install Now.
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-Congratulations! osTicket has successfully been installed!
-
-![image](https://github.com/user-attachments/assets/affc680d-dd0a-4416-8fc5-64f78d4808a1)
-
-
-
-
-
-
-
-
-
 
 
 
