@@ -229,7 +229,7 @@ Next, I will load the osTicket website. In IIS, expand osticket-vm by clicking t
 ![image](https://github.com/user-attachments/assets/5e76a6c7-6964-49df-a3fd-01b3ec5c9d9b)
 
 
-It is very important that every step is done precisely. If osTicket was installed correctly, it will look like this. Congratulations!
+It is very important that every step is done precisely. If osTicket was installed correctly, it will look like this. Success!
 
 ![image](https://github.com/user-attachments/assets/c971748a-cc70-4fd3-831d-2a91ac8c43f2)
 
